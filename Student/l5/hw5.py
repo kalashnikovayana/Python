@@ -13,6 +13,15 @@
 #         new_numbers.append(num)
 # print(new_numbers)
 
+# numbers = [1, 2, 3, 4, 5]
+
+# for index in range(len(numbers)):
+#     if numbers[index] % 2 == 0:
+#         numbers[index] += 1
+#     else:
+#         numbers[index] -= 1
+# print(numbers)
+
 #Дано два списки однакової довжини: список чисел і список степенів. Піднести кожне число до відповідного степеня.
 #Вхід: числа = [2, 3, 4], степені = [3, 2, 1]
 #Вихід: [8, 9, 4]
@@ -26,36 +35,48 @@
 # #print(new_num)
 # print(rez)
 
+
+
+# nums = [2, 3, 4]
+# stepin = [3, 2, 1]
+# new_nums = []
+# for index in range(len(nums)):
+#     new_nums.append(nums[index]**stepin[index])
+# print(new_nums)
+
+
 #Дано список чисел. Залишити тільки ті числа, сума цифр яких більша за задане число n.
 #Вхід: список = [129, 45, 6, 789], n = 10
 #Вихід: [129, 789]
-n = int(input("Введіть n : "))
-numbers = [129, 45, 6, 789]
-new_numbers = []
+# n = int(input("Введіть n : "))
+# numbers = [129, 45, 6, 789]
+# new_numbers = []
 
-for num in numbers:
-    sum_num = 0
-    chislo = num
-    while chislo > 0:
-        sum_num += chislo % 10
-    if sum_num > n:
-        new_numbers.append(sum_num)
-print(new_numbers)
+# for num in numbers:
+#     sum_num = 0
+#     chislo = num
+#     while chislo > 0:
+#         sum_num += chislo % 10
+#         chislo//=10
 
-#Даний список заповнений довільними цілими числами. Знайдіть у списку два числа, добуток яких максимально. Виведіть ці числа в порядку не втрати.
-numbers = [22, 54, 62, 73, 23, 41, 54, 89, 54, 31]
-dob = 1
+#     if sum_num > n:
+#         new_numbers.append(num)
+# print(new_numbers)
 
-for i in range(len(numbers)):
-    for j in range(len(numbers)):
-        if i != j:
-            a = numbers[i]
-            b = numbers[j]
-            rez = a * b
+#Даний список заповнений довільними цілими числами. Знайдіть у списку два числа, добуток яких максимально. 
+# numbers = [22, 54, 62, 73, 23, 41, 54, 89, 54, 31]
+# dob = 1
 
-            if rez > dob:
-                dob = rez
-print(dob)
+# for i in range(len(numbers)):
+#     for j in range(len(numbers)):
+#         if i != j:
+#             a = numbers[i]
+#             b = numbers[j]
+#             rez = a * b
+#             if rez > dob:
+#                 # print(a, b)
+#                 dob = rez
+# print(dob)
 
 #Порівняти, чи перша літера імені співпадає з першою літерою прізвища і вивести відповідне повідомлення. 
 # first_name = input("Введіть ім'я: ")
@@ -86,17 +107,33 @@ print(dob)
 
 # import random
 
-# magic = random.randint(5, 100)
+# magic = random.randint(1, 100)
 # print(magic)
 
-# for i in range(7):
-#     j = int(input("Ваше число : "))
-#     if j == magic:
+# for _ in range(7):
+#     user_num = int(input("Ваше число : "))
+#     if user_num == magic:
 #         print("Yes")
-#     elif j < magic:
+#         break
+#     elif user_num < magic:
 #         print("No, the number is less")
-#     elif j > magic:
+#     elif user_num > magic:
 #         print("No, the number is more")
 # else:
 #     print("You are loose.")
 
+
+
+# import random
+
+# words = ["apple", "pear", "avocado"]
+
+# rindex = random.randint(0, len(words)-1)
+
+# print(words[rindex])
+
+# import random
+
+# words = ["apple", "pear", "avocado"]
+
+# print(random.choice(words))
