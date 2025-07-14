@@ -53,7 +53,7 @@ rmatrix = [
 
 # for row in range(len(rmatrix)):
 #     for col in range(len(rmatrix[row])):
-#         rmatrix[row][col] += row
+#         rmatrix[row][col] += row+1
 
 
 # Якщо у матриці є від’ємні числа, зроби їх нульовими.
