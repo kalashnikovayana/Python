@@ -37,6 +37,7 @@
 # for key, value in dct.items():
 #     if value == 'пес':
 #         print(key)
+#         break
     
 
 # Задача 4
@@ -65,4 +66,13 @@
 #         dct_new[key] = 0
 
 # print(dct_new)
+
+
+# dct = {'a': 5, 'b': -2, 'c': 8}
+
+# for key, value in dct.items():
+#     if value < 0:
+#         dct[key] = 0
+
+# print(dct)
 
